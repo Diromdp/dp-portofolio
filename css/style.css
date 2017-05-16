@@ -524,6 +524,16 @@ h3.w3l_head.two {
        min-height: 690px;
     padding-top: 9em;
 }
+.skills2{
+      background: url(../images/banner.jpg) no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+       min-height: 544px;
+    padding-top: 9em;
+}
 .skill-agile h4 {
     font-size: 1.6em;
     text-transform: uppercase;
@@ -585,6 +595,10 @@ p.b_label {
 }
 .education-w3l {
     padding: 8em 4em;
+    background: #f3f2f2;
+}
+.education-w3l2 {
+    padding: 10.5em 4em;
     background: #f3f2f2;
 }
 .education-agile-w3l-info h4 ,.education-agile-w3l-year h4{
@@ -717,6 +731,7 @@ p.b_label {
 }
 .agile_count_grid {
     text-align: center;
+    top: -170px;
 }
 .agile_count_grid  h5 {
     font-size: 1.6em;
@@ -734,6 +749,61 @@ p.counter {
     text-transform: uppercase;
        color: #44c7f4;
 	
+}
+.rounded-list {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded-list li{width: 240px;
+text-align: center;
+margin: 0 auto;
+    font-size: 21px;
+font-family: 'Gidugu', sans-serif;
+position: relative;
+top:-120px;}
+
+.rounded-list a{
+    position: relative;
+    display: table;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+.rounded-list a:hover{
+    background: #eee;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);  
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
 }
 .count {
     padding-top: 11em;
